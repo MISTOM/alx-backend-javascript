@@ -1,5 +1,3 @@
-/* eslint no-underscore-dangle: 0 */
-/* eslint class-methods-use-this: 0 */
 export default class Building {
   /**
    *
