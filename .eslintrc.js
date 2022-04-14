@@ -18,6 +18,8 @@ module.exports = {
   },
   plugins: ['jest'],
   rules: {
+    'no-underscore-dangle': 'off',
+    'class-methods-use-this': 'off',
     'no-console': 'off',
     'no-shadow': 'off',
     'no-restricted-syntax': [
