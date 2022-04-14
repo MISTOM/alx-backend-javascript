@@ -28,3 +28,4 @@ for (let i of studentsList){
 	table.appendChild(tr).innerHTML = `<td> ${i.firstName} </td>
 	<td> ${i.location} </td>`
 }
+document.body.insertAdjacentElement('beforeend', table);
