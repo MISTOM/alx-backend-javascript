@@ -6,7 +6,7 @@ const fs = require('node:fs');
  * @param {String} dataPath The path to CSV datafile.
  * @author Thomas Kigarde <https://github.com/MISTOM>
  */
-const countStudents = (dataPath) => {
+ const countStudents = (dataPath) => {
   if (!fs.existsSync(dataPath)) {
     throw new Error('Cannot load the database');
   }
@@ -29,7 +29,6 @@ const countStudents = (dataPath) => {
     if (!Object.keys(studentGroups).includes(field)) {
       studentGroups[field] = [];
     }
-
     const studentEntries = studentPropNames
       .map((propName, idx) => [propName, studentPropValues[idx]]);
     studentGroups[field].push(Object.fromEntries(studentEntries));
