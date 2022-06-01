@@ -18,3 +18,4 @@ app.on('request', (req, res) => {
 app.listen(PORT, HOST, () => {
   console.log(`App running on http://${HOST}:${PORT}/`);
 });
+module.exports = app
